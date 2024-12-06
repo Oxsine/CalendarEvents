@@ -2,21 +2,21 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(9999)
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>ВЫ МИНИСТР ЭКОНОМИКИ!</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => setCount((count) => count - 5)}>
+          Курс рубля: {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          СПАСИ РУБЛЬ ОТ ОБВАЛА! КЛИКАЙ КАК МОЖНО БЫСТРЕЕ!
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        ЕСЛИ ВЫ НЕ УСПЕЕТЕ, ТО ОТПРАВИТЕСЬ НА СВО
       </p>
     </>
   )
