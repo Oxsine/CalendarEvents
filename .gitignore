@@ -11,7 +11,7 @@ node_modules
 dist
 dist-electron
 dist-react
-sqlite.db
+saved/*
 *.local
 
 # Editor directories and files
@@ -24,3 +24,4 @@ sqlite.db
 *.njsproj
 *.sln
 *.sw?
+*.db

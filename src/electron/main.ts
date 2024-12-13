@@ -14,6 +14,6 @@ app.on("ready", ()=>{
     }
 
     //pollResources();
-    //initDB();
+    initDatabase();
     
 })
