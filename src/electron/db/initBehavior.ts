@@ -1,10 +1,13 @@
 import sqlite3 from 'sqlite3';
 
-export function initDatabase() {
-    const sql3 = sqlite3.verbose();
-    const dbName = './SavedData.db';
+const sql3 = sqlite3.verbose();
+const dbName = './SavedData.db';
 
-    let db = new sql3.Database(dbName, (err) => {
+export const db: any = initDatabase(); 
+
+function initDatabase() {
+
+    return new sql3.Database(dbName, (err) => {
         if(err) {
             console.log(err.message);
         } else {
@@ -32,5 +35,4 @@ export function initDatabase() {
                 'color TEXT NOT NULL)');
         }
     })
-    db.close();
 }

@@ -2,7 +2,6 @@ import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import {isDev} from './util.js';
 import { pollResources } from './resourceManager.js';
-import { initDatabase } from './db/sqliteInitBehavior.js';
 
 
 app.on("ready", ()=>{
@@ -14,6 +13,5 @@ app.on("ready", ()=>{
     }
 
     //pollResources();
-    initDatabase();
     
 })
